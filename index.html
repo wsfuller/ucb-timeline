@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCB Extension Timeline</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
+    <!-- LIBRARIES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" />
+    <link rel="stylesheet" href="./assets/css/lib/jquery-modal.min.css" />
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/images/logos/uc-berkeley-logo-white.svg" />
+      </div>
+      <a class="link-icon --round" href="#">
+        <i class="zmdi zmdi-github"></i>
+      </a>
+    </header>
+    <main class="container">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-toggle">
+          <button id="sidebar-toggle-button" class="--rounded" type="button" onclick="toggleSidebar();">
+            <i class="zmdi zmdi-chevron-left"></i>
+          </button>
+        </div>
+        <nav>
+          <ul id="spy-navigation">
+            <li><a href="#1891-1900">1891 <span>The beginning</span></a></li>
+            <li><a href="#1901-1920">1901 <span>New age</span></a></li>
+            <li><a href="#1921-1940">1921 <span>Golden age</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <section class="hero rellax">
+          <div class="hero-content rellax" data-rellax-speed="1">
+            <img src="./assets/images/logos/uc-berkeley-logo-white.svg" />
+            <div id="hero-typewriter"></div>
+          </div>
+        </section>
+        <!-- CONTENT -->
+        <section id="1891-1900" class="content">
+          <div class="content-body">
+            <div class="intro">
+              <span>The beginning</span>
+              <span>1891-1900</span>
+            </div>
+            <div class="details">
+              <div class="details-body">
+                <p>
+                  Two years after the founding of the University of California, UC geology professor Joseph Le Conte was approached by eight students to lead an extracurricular five‐week field study to Yosemite and the High Sierra. Meeting this curious and unexpected demand — and John Muir along the way — Le Conte later published on what he referred to as his University of California Excursion.
+                </p>
+                <div class="details-action">
+                  <a class="button" href="#modal-1891-to-1900" rel="modal:open">More details</a>
+                </div>
+              </div>
+              <div class="details-media">
+                <img class="image-responsive" src="./assets/images/backgrounds/uc-berkeley-campus-aerial.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- DIVIDER -->
+        <section class="parallex rellax" data-rellax-speed="3">
+          <img class="image-responsive" src="./assets/images/backgrounds/uc-berkeley-campus-gate.jpg" />
+        </section>
+        <!-- CONTENT -->
+        <section id="1901-1920" class="content">
+          <div class="content-body">
+            <div class="intro">
+              <span>New age</span>
+              <span>1901-1920</span>
+            </div>
+            <div class="details details--body-right">
+              <div class="details-media">
+                <img class="image-responsive" src="./assets/images/backgrounds/uc-berkeley-clock-tower.jpg" />
+              </div>
+              <div class="details-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas mauris eget porta lobortis. Integer ac sodales felis. Aenean diam massa, sollicitudin nec urna in, luctus fringilla velit. In imperdiet odio accumsan nulla rhoncus, a aliquam nisl lobortis. Sed ultricies ullamcorper lacus. Suspendisse venenatis nisl eu mi pharetra condimentum. Nam dui libero, venenatis ac erat in, varius tincidunt nisl. Nullam feugiat varius magna non aliquet. Nam faucibus, est at pellentesque viverra, lacus lacus tempor felis, id bibendum massa ante ac est. Aenean bibendum massa in enim lobortis eleifend. In congue lacinia nibh vel faucibus.
+                </p>
+                <div class="details-action">
+                  <a class="button" href="#modal-1901-to-1920" rel="modal:open">More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- DIVIDER -->
+        <section class="parallex rellax" data-rellax-speed="3">
+          <img class="image-responsive" src="./assets/images/backgrounds/uc-berkeley-campus-courtyard.jpg" />
+        </section>
+        <!-- CONTENT -->
+        <section id="1921-1940" class="content">
+          <div class="content-body">
+            <div class="intro">
+              <span>Golden age</span>
+              <span>1921-1940</span>
+            </div>
+            <div class="details">
+              <div class="details-body">
+                <p>
+                  Nullam lorem lorem, tincidunt eget ex vel, sollicitudin luctus massa. Integer rutrum molestie turpis eu venenatis. Curabitur eu purus ornare sapien porttitor hendrerit. Pellentesque lobortis ullamcorper libero, id suscipit mauris scelerisque et. Pellentesque accumsan purus sit amet purus vestibulum, vitae euismod mi mollis.
+                </p>
+                <div class="details-action">
+                  <a class="button" href="#modal-1921-to-1940" rel="modal:open">More details</a>
+                </div>
+              </div>
+              <div class="details-media">
+                <img class="image-responsive" src="./assets/images/backgrounds/uc-berkeley-university-library.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section style="width: 100%; height: 50rem;"></section>
+        <footer></footer>
+      </div>
+    </main>
+    <!-- MODALS -->
+    <div id="modal-1891-to-1900" class="modal">
+      <p>The beginning, more information about about the time between 1891 and 1900</p>
+    </div>
+    <div id="modal-1901-to-1920" class="modal">
+      <p>New age, more information about about the time between 1901 and 1920</p>
+    </div>
+    <div id="modal-1921-to-1940" class="modal">
+      <p>Golden age, more information about about the time between 1921 and 1940</p>
+    </div>
+    <!-- LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/libs/typewriter.min.js"></script>
+    <script src="./assets/js/libs/rellax.min.js"></script>
+    <script src="./assets/js/libs/jquery-modal.min.js"></script>
+
+    <!-- UTILITIES -->
+    <script src="./assets/js/utils/toggleSidebar.js"></script>
+    <script src="./assets/js/utils/typewriter.js"></script>
+    <script>
+      const rellax = new Rellax('.rellax', {
+        wrapper: '.main-content'
+      });
+    </script>
+  </body>
+</html>
