@@ -130,11 +130,6 @@ header a {
   max-width: 10.9375rem;
 }
 
-.logo > img {
-  width: auto;
-  height: 100%;
-}
-
 main.container {
   display: flex;
   /* flex-direction: row; */
